@@ -1,3 +1,6 @@
+:root {
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -9,12 +12,11 @@
 
 body {
     background-color:ghostwhite;
-    font-family: Arial, serif;
 
 }
 
 .header {
-    height: 5%;
+    height: 30px;
     position: fixed;
     display: flex;
     flex-direction: row;
@@ -26,7 +28,6 @@ body {
 }
 
 .navbar {
-    padding-top: 0.3%;
     display: flex;
     flex-direction: row;
 }
@@ -36,16 +37,25 @@ body {
     justify-content:left;
     text-align: left;
     width: 33vw;
-    font-family: Arial;
+
+}
+
+.btn-nav-index {
+    background-color: transparent;
+    border: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    cursor: pointer;
 
 }
 
 #logo {
     text-align: center;
     padding-left: 10px;
-    font-size: x-large;
+    font-size: 20px;
 }
 .navbar-list {
+    margin-top: 3px;
     cursor: pointer;
     width: 33vw;
     display: flex;
@@ -53,8 +63,10 @@ body {
     justify-content: center;
     list-style: none none;
     gap: 10%;
-    font-size: x-large;
+    font-size: 18px;
     transition: 0.5s;
+    font-family: "Franklin Gothic Medium" ;
+    font-weight: lighter;
 }
 .hero {
     margin-top: 5%;
@@ -89,17 +101,18 @@ img {
 
     }
     .header {
-        height: 7%;
+        max-height: 4%;
         justify-content: center;
+        opacity: 70%;
     }
     .section {
         margin-top: 20%;
     }
 
     .navbar-list {
+        visibility: hidden;
         width: 80%;
         margin-left: 10%;
-        font-size: large;
         text-align: center;
     }
 
@@ -115,18 +128,22 @@ img {
 
 @media (max-width:700px) {
     .header {
-        height: 8%;
+        height: 10%;
+
+    }
+    .logo-container-class {
+        margin-top: 0;
+        padding-top: 0;
     }
 }
 
-.list-item:hover {
-    border-bottom: 5px solid gray;
+.btn-nav-index:hover {
+    background-color: #f6f6fd;
 
 }
 
-.list-item:active {
-    border-bottom: 5px solid #2f2f2f;
-
+.btn-nav-index:active {
+    background-color: #dfdfe5;
 }
 
 
